@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>lznTravel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./hotelDetail_style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #4169E1;">
+      <div class="container-fluid mx-2">
+        <a class="navbar-brand" href="./main.html">
+          <img src="./image/lznTravel_logo_small.png" alt="" width="141px" height="auto" class="float-start">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="./hotel.html">Hotel</a>
+            </li>
+            <li class="nav-item dropdown mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Transportasi
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Pesawat</a></li>
+                <li><a class="dropdown-item" href="#">Kereta</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">Hiburan</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">Promo</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">Download App</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">Tentang kami</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">Bantuan</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">ID</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a href="./login.html"><button type="button" class="btn btn-light fw-bold">Log in / Daftar</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation Bar -->
+
+    <!-- isi -->
+    <div class="bb_mainIsi rounded-top-left-2 rounded-top-right-2" style="margin-top: 60px;">
+
+      <!-- Breadcrumb -->
+      <div class="bb_breadcrumb">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb ">
+            <li class="breadcrumb-item"><a href="./hotel.html" class="text-decoration-none text-secondary">Hotel</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-secondary">Nusantara</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Quantum Resort</li> 
+          </ol>
+        </nav>
+      </div>
+      <!-- Breadcrumb -->
+
+      <!-- Hotel Detail -->
+      <div class="bb_containerHotelCards p-5 rounded-3">
+        <div>
+          <div class="bb_JudulDanHarga">
+            <div class="container bb_cJudul p-0 mb-2">
+                <div class="row align-items-start">
+                  <div class="col text-start">
+                    Quantum Resort
+                  </div>
+                  <div class="col text-end">
+                    Rp3.311.925
+                  </div>
+                </div>
+            </div>
+          </div>
+          <img src="./image/quantumHD.png" alt="" class="bb_thumbnail mb-2">
+          <div class="bb_HD_desc mt-2">
+              <p class="fw-semibold"><i class="bi bi-geo-alt-fill"></i> Jl Lorem Raya, Nusantara Timur, Nusantara, 45645, Indonesia</p>
+              <p class="fw-semibold"><i class="bi bi-buildings-fill"></i> Terletak di kota Nusantara, Quantum Resort berada di ujung timur... <a class="text-decoration-none" href="" data-bs-toggle="modal" data-bs-target="#bb_modalHotelDetail">Selengkapnya</a></p>
+          </div>
+          <div class="container text-center">
+            <div class="row align-items-center">
+              <div class="bb_footerHotelDetail col rounded-3 m-1 p-4">
+                4,6/5 - Sangat Baik
+              </div>
+              <div class="bb_footerHotelDetail col rounded-3 m-1 p-4">
+                Restoran, Kolam Renang
+              </div>
+              <button class="bb_footerHotelDetailButton col rounded-3 m-1 p-4 border border-0 text-light" type="button" data-bs-toggle="modal" data-bs-target="#bb_modalPesanKamar">
+                Pesan Kamar
+              </button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- Hotel Detail -->
+
+      <!-- Modal HotelDetail -->
+      <div class="modal fade" id="bb_modalHotelDetail" tabindex="-1" aria-labelledby="bb_modalHotelDetail_Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="bb_modalHotelDetail_Label">Quantum Resort</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div>
+                <p class="fw-bold mb-1"><i class="bi bi-geo-alt-fill"></i>  Lokasi</p>
+                <p class="">Jl Lorem Raya, Nusantara Timur, Nusantara, 45645, Indonesia</p>
+              </div>
+              <div>
+                <p class="fw-bold mb-1"><i class="bi bi-buildings-fill"></i> Detail</p>
+                <p class="">
+                  Terletak di kota Nusantara Timur (Nusantara), Quantum Resort - ESCH Certified hanya berjarak 15 menit dari Bandara Nusantara. 
+                  Hotel bintang 10 berjarak 3,5 mi (5,6 km) dari Pusat Kota Nusantara dan 1 mi (1,6 km) dari Pantai Nasional.
+                </p>
+                <p>
+                  Fasilitas unggulan antara lain pusat bisnis, resepsionis 24 jam, dan staf multibahasa. Quantum Resort mempunyai ruang 6 ruang pertemuan yang bisa dimanfaatkan untuk beragam acara. 
+                  Antar-jemput ke bandara disediakan dengan biaya tambahan (tersedia 24 jam), dan parkir valet gratis tersedia di lokasi. 
+                  Nikmati kenyamanan rumah Anda sendiri di salah satu dari 162 kamar berpenyejuk udara yang dilengkapi dengan televisi layar datar. 
+                  Akses Internet nirkabel gratis tersedia untuk menjamin koneksi Anda. Kamar mandi pribadi dengan bathtub dan shower terpisah memiliki shower rainfall dan perlengkapan mandi gratis. 
+                  Fasilitas mencakup telepon, serta brankas dan meja tulis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal HotelDetail -->
+
+      <!-- Modal Pesan -->
+      <div class="modal fade" id="bb_modalPesanKamar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="bb_modalPesanKamar_Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="bb_modalPesanKamar_Label">Pesan Kamar</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div>
+                <div class="mb-3">
+                  <label for="" class="form-label">Jenis Kamar</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected disabled>Pilih...</option>
+                    <option value="1">Superior Room</option>
+                    <option value="2">Deluxe Room</option>
+                    <option value="3">Twin Room</option>
+                  </select>
+                </div>
+                <div class="row">
+                  <div class="col mb-3">
+                    <label for="bb_checkInHotel" class="mb-1">Check-In</label>
+                    <input type="date" class="form-control" id="bb_checkInHotel" placeholder="TanggalPergi">
+                  </div>
+                  <div class=" col mb-3">
+                    <label for="bb_checkOutHotel" class="mb-1">Check-Out</label>
+                    <input type="date" class="form-control" id="bb_checkOutHotel" placeholder="TanggalPulang">
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="row">
+                    <label for="bb_JumlahTamu" class="form-label">Jumlah Tamu</label>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="number" min="1" class="form-control" id="bb_JumlahTamu" placeholder="1" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">Dewasa</span>
+                      </div>
+                    </div>
+                      <div class="col">
+                        <div class="input-group">
+                          <input type="number" min="0" class="form-control" id="bb_JumlahTamu" placeholder="0" aria-describedby="basic-addon2">
+                          <span class="input-group-text" id="basic-addon2">Anak</span>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="bb_Pesan_textArea" class="form-label">Note</label>
+                  <textarea class="form-control" id="bb_Pesan_textArea" rows="3 placeholder="Tulis Pesan...""></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="bb_TotalHarga" class="form-label">Total Harga</label>
+                  <input type="email" class="form-control" id="bb_TotalHarga" placeholder="Rp.3.311.925" disabled>
+                </div>
+                <div class="alert alert-warning" role="alert">
+                  Jika mengklik tombol pesan anda akan dipindahkan kehalaman check out
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Pesan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Pesan -->
+
+      <!-- Hotel -->
+      <div class="bb_containerHotelCards p-5 rounded-3 mt-5">
+        <p class="bb_cJudul">Hotel Lainnya disekitar anda</p>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="./hotelDetail.html" class="text-decoration-none text-black">
+            <div class="card h-100 shadow-sm">
+              <img src="./image/hotel1.png" class="card-img-top" alt="Hotel1">
+              <div class="card-body">
+                <h5 class="card-title">Hotel D'Plaza</h5>
+                <p class="card-text">Rp503.231</p>
+              </div>
+            </div>
+            </a>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="./hotelDetail.html" class="text-decoration-none text-black">
+            <div class="card h-100 shadow-sm">
+              <img src="./image/hotel2.png" class="card-img-top" alt="Hotel2">
+              <div class="card-body">
+                <h5 class="card-title">Ayaka Resort</h5>
+                <p class="card-text">Rp1.717.341</p>
+              </div>
+            </div>
+            </a>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="./hotelDetail.html" class="text-decoration-none text-black">
+            <div class="card h-100 shadow-sm">
+              <img src="./image/hotel3.png" class="card-img-top" alt="Hotel3">
+              <div class="card-body">
+                <h5 class="card-title">Quantum Resort</h5>
+                <p class="card-text">Rp3.311.925</p>
+              </div>
+            </div>
+          </a>
+          </div>
+
+        </div>
+      </div>
+      <!-- Hotel -->
+
+      <!-- Artikel Hotel Hari ini -->
+      <div class="bb_containerArtikel p-5 rounded-3 my-5">
+        <p class="bb_cJudul">Artikel Hotel Hari ini</p>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./image/artikel1.png" class="card-img-top" alt="Artikel1">
+              <div class="card-body">
+                <h5 class="card-title">Inilah yang akan kamu dapatkan di Quantum Resort</h5>
+                <p class="card-text">5 min read</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./image/artikel2.png" class="card-img-top" alt="Artikel2">
+              <div class="card-body">
+                <h5 class="card-title">Hotel dengan pemandangan terbaik di Nusantara</h5>
+                <p class="card-text">5 min read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Artikel Hari ini -->
+    </div>
+    <!-- isi -->
+
+    <!-- Footer -->
+    <div class="bb_footer bg-dark">
+      <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5">
+          <div class="col mb-3">
+            <a href="" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+              <img src="./image/lznTravel_logo_small.png" alt="" class="w-50">
+            </a>
+            <p class="text-muted">&copy; 2022</p>
+          </div>
+          <div class="col mb-3">
+
+          </div>
+          <div class="col mb-3">
+            <h5 class="text-light">Tentang lznTravel</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tentang Kami</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cara Pesan</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hubungi Kami</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Download Aplikasi</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5 class="text-light">Layanan Kami</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tiket Pesawat</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tiket Kereta</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hotel</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hiburan</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5 class="text-light">Lainnya</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lorem Ipsum</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Dolor Sit</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Amet Consectetur</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Adipisicing Elit</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Voluptas Rem Eligendi</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

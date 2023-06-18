@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>lznTravel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./login_style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #4169E1;">
+      <div class="container-fluid mx-2">
+        <a class="navbar-brand" href="./main.html">
+          <img src="./image/lznTravel_logo_small.png" alt="" width="141px" height="auto" class="float-start">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="./hotel.html">Hotel</a>
+            </li>
+            <li class="nav-item dropdown mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Transportasi
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Pesawat</a></li>
+                <li><a class="dropdown-item" href="#">Kereta</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">Hiburan</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">Promo</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">Download App</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">Tentang kami</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">Bantuan</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">ID</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation Bar -->
+
+    <!-- isi -->
+    <div class="bb_mainIsi rounded-top-left-2 rounded-top-right-2" style="margin-top: 60px;">
+        <div class="bb_containerLogin rounded-3">
+            <div class="row">
+                <!-- Kiri -->
+                <div class="col-6 rounded-start p-0" style="background-color: #4169E1;">
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <img src="./image/lznTravel_logo_small.png" class="" alt="..." width="100%" style="padding-top: 180%; padding-bottom: 100%;">
+                        </div>
+                      </div>
+                </div>
+                <!-- Kiri -->
+
+                <!-- Kanan -->
+                <div class="col-6 rounded-end p-0" style="background-color: #F2F4FD;">
+                    <div class="row justify-content-center">
+                        <div class="col-8 bb_containerKanan">
+                            <div class="mb-5">
+                                <p class="text-center fs-3 fw-bold">Welcome</p>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="inputNamaLengkap_reg" placeholder="Nama Lengkap" value="">
+                                <label for="floatingInput">Nama Lengkap</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="inputEmail_reg" placeholder="Email address" value="">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="inputPassword_reg" placeholder="Password" value="">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <div class="form-floating mb-2">
+                                <input type="password" class="form-control" id="inputRePassword_Reg" placeholder="Password" value="">
+                                <label for="floatingPassword">Re-Password</label>
+                            </div>
+                            <div class="form-check mb-5">
+                                <input class="form-check-input" type="checkbox" value="" id="checkBox_Terms">
+                                <label class="form-check-label text-secondary" for="flexCheckDefault">I agree to the <a href="#">terms and condition</a></label>
+                            </div>
+                            <div class="alert alert-warning" role="alert">
+                                Pastikan data yang anda isi sudah tepat!
+                              </div>
+                            <div class="d-grid col-auto mx-auto">
+                                <button id="button_submit_reg" class="btn btn-primary p-3" type="submit">Daftar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Kanan -->
+            </div>
+        </div>
+    </div>
+    <!-- isi -->
+
+    <!-- Footer -->
+    <div class="bb_footer bg-dark">
+      <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5">
+          <div class="col mb-3">
+            <a href="" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+              <img src="./image/lznTravel_logo_small.png" alt="" class="w-50">
+            </a>
+            <p class="text-muted">&copy; 2022</p>
+          </div>
+          <div class="col mb-3">
+
+          </div>
+          <div class="col mb-3">
+            <h5 class="text-light">Tentang lznTravel</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tentang Kami</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cara Pesan</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hubungi Kami</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Download Aplikasi</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5 class="text-light">Layanan Kami</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tiket Pesawat</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tiket Kereta</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hotel</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hiburan</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5 class="text-light">Lainnya</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lorem Ipsum</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Dolor Sit</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Amet Consectetur</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Adipisicing Elit</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Voluptas Rem Eligendi</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("button_submit_reg").onclick = function () {
+        let NamaLengkap = document.getElementById("inputNamaLengkap_reg").value;
+        let Email = document.getElementById("inputEmail_reg").value;
+        let Password = document.getElementById("inputPassword_reg").value;
+        let RePassword = document.getElementById("inputRePassword_Reg").value;
+        let TermCheck = document.getElementById("checkBox_Terms");
+
+        if (NamaLengkap === "") {
+          alert("Isi Nama Lengkap anda!")
+        }
+        else if (Email === "") {
+          alert("Isi Email anda!")
+        }
+        else if (!Email.includes("@") || !Email.includes(".")) {
+          alert("Email harus mengandung '@' dan '.'")
+        }
+        else if (Password === "") {
+          alert("Isi Password anda!")
+        }
+        else if (Password.length < 10) {
+          alert("Password harus lebih sama dengan 10")
+        }
+        else if (RePassword === "") {
+          alert("Isi Re-Password anda!")
+        }
+        else if (RePassword !== Password) {
+          alert("Re-Password harus sama dengan Password")
+        }
+        else if (TermCheck.checked == false) {
+          alert("please check our Terms")
+        }
+        else {
+          alert(`Selamat Datang ${NamaLengkap}!`)
+          window.location.href="./login.html"
+        }
+        // alert(`Selamat Datang ${NamaLengkap}`)
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
